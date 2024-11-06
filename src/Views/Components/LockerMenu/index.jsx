@@ -6,24 +6,29 @@ import MobileMenu from './component/MobileMenu';
 const LockerMenu = (props) => {
     const menuList = [ // You can pass 4 perameters for menu title, link, target and customClass
         {
-        title: "Home",
-        link: "https://poodle.finance/",
+        title: "About",
+        link: "/#about",
         },
         {
-        title: "Locker",
-        link: "/locker",
+        title: "Gallery",
+        link: "/#gallery",
         },
         {
-        title: "View Chart",
-        link: "https://www.dextools.io/app/ether/pair-explorer/0xD017EA99F60535e5e0f87f997968ad59C6a61B06",
-        target: "_blank"
+        title: "Why buy",
+        link: "/#why-buy",
         },
         {
-        title: "Buy Now",
-        link: "https://app.uniswap.org/#/swap?outputCurrency=0xf5d20bae62a50c2a0953e054e9544d7906114df9&chain=mainnet",
-        customClass: "",
-        target: "_blank"
+        title: "How to buy",
+        link: "/#how-to-buy",
         },
+        {
+        title: "Testimonials",
+        link: "/#testimonials",
+        },
+        {
+        title: "Contact",
+        link: "/#contact",
+        }
     ];
   return (
     <Container>

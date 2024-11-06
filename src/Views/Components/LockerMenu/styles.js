@@ -24,6 +24,7 @@ const MobileMainMenu = styled.div`
 const SiteLogo = styled.img`
   max-width: 100%;
   height: auto;
+  width: 80px;
 `;
 const MenuLink = styled(Link)`
   font-size: max(15px, 17px);
@@ -32,26 +33,19 @@ const MenuLink = styled(Link)`
   color: ${ (props) => props.theme.textPrimary};
   text-transform: uppercase;
   text-decoration: none;
-  padding: ${ (props) => props.p? props.p: '0 15px'};
+  padding: ${ (props) => props.p? props.p: '5px 15px'};
   cursor: pointer;
   transition-duration: 0.5s;
 
   &:hover, &:active, &:focus {
-    color: #ffffff;
+    color: #f4f4f4;
+    background-color: #000000;
     transition-duration: 0.5s;
   }
   @media (max-width: 899px) {
     display: block;
     padding: ${ (props) => props.p? props.p: '15px 0 15px 20px'};
     text-align: left;
-  }
-  &:last-child {
-    border-width: 0px;
-    background: red;
-    width: calc(100% - 40px);
-    margin: 15px auto;
-    padding: 10px 20px;
-    text-align: center;
   }
 `;
 

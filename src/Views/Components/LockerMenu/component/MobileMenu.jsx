@@ -5,7 +5,7 @@ import Divider from "@mui/material/Divider";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { toggleTheme } from '../../../../Redux/switchTheme'
 import { useDispatch, useSelector } from "react-redux";
-import logo from "../../../../assets/logo.png";
+import logo from "../../../../assets/mobile-Logo.png";
 import { MaterialUISwitch, MenuLink, MobileMainMenu, SiteLogo, DrawerBox, DrawerDivider, Humburgger, HumburggerClose, MenuButton } from "../styles";
 
 
@@ -22,7 +22,7 @@ const MobileMenu = (props) => {
   return (
     <MobileMainMenu>
       <MenuLink href="/" p="15px 0 15px">
-        <SiteLogo src={logo} width="150" height='50' />
+        <SiteLogo src={logo} />
       </MenuLink>
       <MenuButton onClick={toggleDrawer("left", true)}>
         {state["left"] ? (
@@ -48,19 +48,6 @@ const MobileMenu = (props) => {
             <Divider />
             <List>
               {props.menuList.map((value, i) => <MenuLink key={i} href={value.link}  target={value.target} className={value.customClass + " d-block"}>{value.title}</MenuLink>)}
-            </List>
-          </DrawerDivider>
-          <DrawerDivider>
-            <List>
-              <FormControlLabel
-                control={
-                  <MaterialUISwitch 
-                    sx={{ m: 1 }} 
-                    checked={currentTheme}
-                  />
-                }
-                onClick={() => dispatch(toggleTheme())}
-              />
             </List>
           </DrawerDivider>
         </DrawerBox>

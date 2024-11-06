@@ -30,7 +30,12 @@
 
 @font-face {
   font-family: "primary";
-  src: url(./assets/fonts/RifficFree-Bold.woff);
+  src: url(./assets/fonts/Helvetica-Ultra-Compressed.woff);
+}
+
+@font-face {
+  font-family: "secondary";
+  src: url(./assets/fonts/GothamMedium.woff);
 }
 
 *{font-family: 'primary' !important ; color: #fff;}
@@ -42,4 +47,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.MuiTypography-h1{
+  font-size: 110px !important;
+  font-family: 'secondary' !important;
+  text-transform: uppercase;
+}
+
+.MuiTypography-h2{
+  font-size: 80px !important;
+  font-family: 'secondary' !important;
+  text-transform: uppercase;
+}
+
+.MuiTypography-h6{
+  font-size: 35px !important;
+  text-transform: uppercase;
+}
+.MuiTypography-body1{
+  font-size: 24px !important;
+  font-family: 'arial' !important;
+  color: #AAAAAA !important;
+}
+.MuiTypography-body2{
+  font-size: 18px !important;
+  font-family: 'arial' !important;
+  color: #AAAAAA !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .MuiTypography-h1{
+    font-size: 90px !important;
+  }
+  
+  .MuiTypography-h2{
+    font-size: 75px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MuiTypography-h1{
+    font-size: 60px !important;
+  }
+  
+  .MuiTypography-h2{
+    font-size: 40px !important;
+  }
+}
+
+.galleryImage {
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.galleryImage:hover {
+  transform: scale(1.05);
 }
