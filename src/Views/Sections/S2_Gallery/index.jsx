@@ -46,7 +46,7 @@ const Gallery = () => {
         });
     }, []);
   return (
-    <Wraper>
+    <Wraper id='gallery'>
         <Container maxWidth="xl">
             <Grid container marginBottom={3}>
                 <Grid xs={12} marginBottom={3} data-aos="fade-up" >

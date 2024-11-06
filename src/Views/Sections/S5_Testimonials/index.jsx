@@ -74,7 +74,7 @@ function Testimonial() {
     }, []);
 
     return (
-        <Wraper>
+        <Wraper id='testimonials'>
             <Container maxWidth="xl">
                 <Grid container marginBottom={3}>
                     <Grid xs={12} marginBottom={3} >

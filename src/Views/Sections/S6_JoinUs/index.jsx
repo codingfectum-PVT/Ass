@@ -34,9 +34,9 @@ const JoinUs = () => {
         <Container maxWidth="xl">
             <Grid container marginBottom={3}>
                 <Grid xs={12} marginBottom={3} >
-                    <Typography variant='h2' textAlign={'center'} margin={'auto'} color={'#555555'} maxWidth={640} data-aos="fade-up">Join the $Ass movement!</Typography>
+                    <Typography variant='h2' textAlign={'center'} margin={'auto'} color={'#555555'} maxWidth={640}>Join the $Ass movement!</Typography>
                     
-                    <Typography variant='body2' maxWidth={'500px'} margin={'24px auto 0'} textAlign={'center'} data-aos="fade-up">
+                    <Typography variant='body2' maxWidth={'500px'} margin={'24px auto 0'} textAlign={'center'}>
                         Don’t just sit there drooling! Get in with the wildest crowd in crypto, where $ASS fans come together for laughs, claps and gifs that’ll keep you coming back for more.  
                         <br /><br />Join our Telegram and get yourself some $ASS!
                     </Typography>

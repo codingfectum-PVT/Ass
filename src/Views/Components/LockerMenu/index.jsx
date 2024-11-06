@@ -25,10 +25,6 @@ const LockerMenu = (props) => {
         title: "Testimonials",
         link: "/#testimonials",
         },
-        {
-        title: "Contact",
-        link: "/#contact",
-        }
     ];
   return (
     <Container>

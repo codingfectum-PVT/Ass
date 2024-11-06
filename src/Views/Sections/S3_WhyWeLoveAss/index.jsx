@@ -36,7 +36,7 @@ const WhyWeLoveAss = () => {
         });
     }, []);
   return (
-    <Wraper>
+    <Wraper id='why-buy'>
         <Container maxWidth="xl">
             <Grid container marginBottom={3}>
                 <Grid xs={12} marginBottom={3} >

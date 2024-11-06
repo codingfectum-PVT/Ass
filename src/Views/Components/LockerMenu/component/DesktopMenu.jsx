@@ -11,7 +11,7 @@ const DesktopMenu = (props) => {
  
   return (
     <DesktopMainMenu maxWidth="xl">
-      <MenuLink href="/" p="0px">
+      <MenuLink href="/" p="0px" className="logo">
         <img src={logo} width="200" height='auto' alt="Logo" />
       </MenuLink>
       <div>

@@ -3,7 +3,7 @@ import { Box, Button, Container, Link } from "@mui/material";
 import Switch from "@mui/material/Switch";
 
 const DesktopMainMenu = styled(Container)`
-  padding: 15px 0;
+  padding: 35px 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,10 +42,28 @@ const MenuLink = styled(Link)`
     background-color: #000000;
     transition-duration: 0.5s;
   }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  &.logo{
+    background-color: unset;
+  }
   @media (max-width: 899px) {
     display: block;
     padding: ${ (props) => props.p? props.p: '15px 0 15px 20px'};
     text-align: left;
+    
+    &.socials{
+      display: inline-block;
+      margin-top: 30px;
+
+      img{
+        width: 100px;
+        height: auto;
+      }
+    }
   }
 `;
 

@@ -49,7 +49,7 @@ const HowToBuy = () => {
         });
     }, []);
   return (
-    <Wraper>
+    <Wraper id='how-to-buy'>
         <Container maxWidth="xl">
             <Grid container marginBottom={3}>
                 <Grid xs={12} marginBottom={3} >

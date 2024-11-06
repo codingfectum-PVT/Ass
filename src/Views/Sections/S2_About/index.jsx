@@ -17,7 +17,7 @@ const About = () => {
         });
     }, []);
   return (
-    <Wraper>
+    <Wraper id='about'>
         <Container maxWidth="xl">
             <Grid container>
                 <Grid xs={12} >
